@@ -33,21 +33,21 @@
       ```bash
        service slim start
       ```
-   4. Volvi al inicio del nodextrem y puse **session**                          
-      ![image](https://github.com/KenaiJoseRod/caso3-servidorweb/assets/160261456/59ce12da-df4d-43cf-abfd-04832699f51d)
+   4. Volvi al inicio del nodextrem y puse **session**
+   ![image](https://github.com/KenaiJoseRod/caso3-servidorweb/assets/160261456/cc38a39d-34b9-421d-8c43-3fbad6bf520e)
    5. En session puse RDP
-      ![image](https://github.com/KenaiJoseRod/caso3-servidorweb/assets/160261456/fd6b4c85-2bca-46b5-bbe8-6c5008042707)
+   ![image](https://github.com/KenaiJoseRod/caso3-servidorweb/assets/160261456/988a574a-3fad-4df9-8b1b-04227c5741bf)
    6. Donde me pide que ponga remote host y username, y le di **ok**.
-    ![image](https://github.com/KenaiJoseRod/caso3-servidorweb/assets/160261456/001ffa70-87a0-4d15-922b-238863421436)
+   ![image](https://github.com/KenaiJoseRod/caso3-servidorweb/assets/160261456/0b289f71-6b0d-4051-99f2-57492303f47e)
    7. Se me abrio la maquina virtual y en el terminal del ubuntu clone el repostorio donde estaba mi sitio web con git page.
-      ![image](https://github.com/KenaiJoseRod/caso3-servidorweb/assets/160261456/03886168-ef89-45d4-8180-91fef217430d)
+   ![image](https://github.com/KenaiJoseRod/caso3-servidorweb/assets/160261456/a067ee30-c9a3-46c5-a6f3-3702c5c8deba)
    8. Lo movi los archivos al directorio de documentos de Apache.
       ```bash
       sudo mv repositorio_clonado /var/www/html/
       ```
    10. Instale el visual studio para ubuntu.
    11. Una vez instalado el visual studio abri la carpeta donde estaba mi respositorio clonado.
-   ![image](https://github.com/KenaiJoseRod/caso3-servidorweb/assets/160261456/d3bc4c4e-fe98-409c-975d-3baf007968c2)
+   ![image](https://github.com/KenaiJoseRod/caso3-servidorweb/assets/160261456/28a41845-d1d1-4e55-8b9a-ee04305117d4)
    12. Instale el npm, git, docusaurus y el node js.
    13. En el archivo docusaurus.config.js cambie la baseUrl
        >de:  baseUrl: '/caso2/'  a  baseUrl:'/'
@@ -59,7 +59,7 @@
    ```bash
    sudo nano /etc/apache2/sites-available/caso3Ter.conf
    ```
-   Dentro de este archivo, configuramos el directorio raíz del sitio web para apuntar al directorio 'build' de tu repositorio de GitHub. Por ejemplo:
+   Dentro de este archivo, configuramos el directorio raíz del sitio web para apuntar al directorio 'build' del repositorio de GitHub. Por ejemplo:
    ```bash
    <VirtualHost *:80>
        ServerAdmin tu_correo_electronico@example.com
@@ -87,4 +87,4 @@
    sudo systemctl restart apache2       
    ```      
 3. Por ultimo puse la ip en calquir navegador para ver si funciono.
-![image](https://github.com/KenaiJoseRod/caso3-servidorweb/assets/160261456/48241c31-cd3c-4a57-9fb4-233926bddc82)
+![image](https://github.com/KenaiJoseRod/caso3-servidorweb/assets/160261456/c84306d0-bf9c-43a5-aa90-d52c06eabe3c)
